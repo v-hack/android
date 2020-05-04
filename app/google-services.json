@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "572592090290",
+    "firebase_url": "https://mydoctor-17113.firebaseio.com",
+    "project_id": "mydoctor-17113",
+    "storage_bucket": "mydoctor-17113.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572592090290:android:478096f752722c87036dab",
+        "android_client_info": {
+          "package_name": "ru.nordclan.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572592090290-phrjf1djpmks0dvigbg3nop4odp2qjb8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9qhFiceK1z4NPSew-x-R98PFckRblI5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572592090290-phrjf1djpmks0dvigbg3nop4odp2qjb8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

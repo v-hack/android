@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="32dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Препараты"
+                android:textColor="@android:color/black"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@drawable/ic_plus_layer"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="27dp"
+            android:text="Ближайший прием препарата"
+            android:textColor="#8A000000"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            tools:ignore="HardcodedText" />
+
+        <include
+            layout="@layout/preparation_card_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="27dp"
+            android:text="Список препаратов"
+            android:textColor="#8A000000"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            tools:ignore="HardcodedText" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_preparation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:paddingHorizontal="2dp"
+            tools:itemCount="2"
+            tools:listitem="@layout/preparation_card_ex_layout" />
+
+    </LinearLayout>
+
+</ScrollView>

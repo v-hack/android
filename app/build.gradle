@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "ru.nordclan.myapplication"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "MOBILE_URL", '"https://virushackserver20200503024208.azurewebsites.net/"'
+        }
+        debug {
+            buildConfigField "String", "MOBILE_URL", '"https://virushackserver20200503024208.azurewebsites.net/"'
+        }
+    }
+
+// To inline the bytecode built with JVM target 1.8 into
+// bytecode that is being built with JVM target 1.6. (e.g. navArgs)
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.2.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.2.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.2.2'
+
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.8.1'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.8.1'
+    implementation "com.squareup.retrofit2:converter-jackson:2.8.1"
+    implementation "com.squareup.retrofit2:converter-scalars:2.8.1"
+
+    // Jackson
+    implementation "com.fasterxml.jackson.core:jackson-databind:2.10.3"
+    implementation "com.fasterxml.jackson.module:jackson-module-kotlin:2.10.3"
+    implementation "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.3"
+    implementation "com.fasterxml.jackson.datatype:jackson-datatype-joda:2.10.3"
+
+    // OkHttp
+    implementation "com.squareup.okhttp3:okhttp:4.5.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:4.5.0"
+
+    // RxJava
+    implementation "io.reactivex.rxjava2:rxjava:2.2.19"
+    implementation "io.reactivex.rxjava2:rxandroid:2.1.1"
+    implementation "io.reactivex.rxjava2:rxkotlin:2.4.0"
+
+    // Dagger
+    implementation 'com.google.dagger:dagger:2.27'
+    kapt 'com.google.dagger:dagger-compiler:2.27'
+    implementation 'com.google.dagger:dagger-android:2.27'
+//    implementation 'com.google.dagger:dagger-android-support:2.27' // if you use the support libraries
+    kapt 'com.google.dagger:dagger-android-processor:2.27'
+
+    implementation "joda-time:joda-time:2.10.5"
+    implementation "com.google.code.findbugs:jsr305:3.0.2"
+
+    // Glide
+    implementation "com.github.bumptech.glide:glide:4.11.0"
+    kapt "com.github.bumptech.glide:compiler:4.11.0"
+//    implementation "com.github.bumptech.glide:okhttp3-integration:4.11.0"
+
+    implementation "com.google.firebase:firebase-messaging:20.1.6"
+    implementation 'com.github.timigod:android-chat-ui:v0.1.4'
+
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}

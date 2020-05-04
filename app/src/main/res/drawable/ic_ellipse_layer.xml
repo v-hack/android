@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:width="31dp"
+        android:height="31dp"
+        android:drawable="@mipmap/ic_gos"
+        android:gravity="center" />
+    <item
+        android:width="42dp"
+        android:height="42dp"
+
+        android:drawable="@drawable/ic_ellipse_42"
+        android:gravity="center" />
+
+</layer-list>

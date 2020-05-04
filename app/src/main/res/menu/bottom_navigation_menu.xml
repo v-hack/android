@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/preparation"
+        android:enabled="true"
+        android:icon="@drawable/ic_assistant_black_24"
+        android:title="Препараты"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/visits"
+        android:enabled="true"
+        android:icon="@drawable/ic_assistant_black_24"
+        android:title="Визиты"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/main"
+        android:enabled="true"
+        android:icon="@drawable/ic_image_black_24"
+        android:title="Главная"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/chat"
+        android:enabled="true"
+        android:icon="@drawable/ic_assistant_black_24"
+        android:title="Чат"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_avatar_26"
+        android:title="Профиль"
+        tools:ignore="HardcodedText" />
+</menu>

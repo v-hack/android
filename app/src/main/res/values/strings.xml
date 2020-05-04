@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Доктор в кармане</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="splash_screen_text">Доктор в кармане</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="register">Регистрация</string>
+    <string name="enter">Войти</string>
+    <string name="cant_login"><u>Не можете войти?</u></string>
+    <string name="tmp_1"><b>Длительность курса:</b></string>
+    <string name="tmp_1_1">&lt;b>Длительность курса:&lt;/b> с %1$s по %2$s</string>
+    <string name="tmp_2"><b>Приемов в день:</b></string>
+    <string name="tmp_2_1">&lt;b>Приемов в день %1$s:&lt;/b> 12:00, 14:00, 17:00, 20:00</string>
+    <string name="tmp_3"><b>Статус:</b> завершен</string>
+
+    <string name="default_notification_channel_id">default_channel</string>
+    <string name="default_notification_channel_name">default_channel</string>
+
+</resources>
